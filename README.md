@@ -71,7 +71,7 @@ conda remove -n envname -all
 
 ### Create via anaconda-navigator 
 
-An alternative way  to create a _env_ and install IDEs (spyder, jupyter, R, VS code, ... ) is via `anaconda_navigator`. [see](https://docs.anaconda.com/anaconda/navigator/tutorials/manage-environments "anaconda")
+An alternative way  to create a _env_ and install IDEs (`spyder`, `jupyter`, `R`, `VS code`, ... ) is via `anaconda_navigator` directly. [see](https://docs.anaconda.com/anaconda/navigator/tutorials/manage-environments "anaconda")
 
 
 
