@@ -1,4 +1,4 @@
-> Create virtual environments for python with conda
+## Create virtual environments for python with conda
 ---
 
 **How to set up a virtual environments using conda for the Anaconda Python distribution**
@@ -34,5 +34,52 @@ conda create -n envname python=x.x
 ```
 
 - Press `y` to proceed. This will install the Python version and all the associated anaconda packaged libraries at “path_to_your_anaconda_location/anaconda/envs/envname”
+
+**3. Activate your virtual environment**
+
+To activate or switch into your virtual environment, simply type the following where _envname_ is the name of your environment
+
+```bash 
+source activate envname
+```
+
+
+**4. Install additional Python packages to a virtual environment**
+
+To install additional packages _only_ to your new virtual environment, enter the following comand  
+
+```bash 
+conda install numpy 
+conda install pytorch
+conda install panda 
+```
+
+**5. Deactivate your virtual environment8***
+
+To end a session in the current environment, enter the following. There is no need to specify the envname - which ever is currently active will be deactivated.
+
+```bash 
+source deactivate
+```
+
+**6. Delete a no longer needed virtual environment**
+To delete a conda environment, enter the following, where yourenvname is the name of the environment you wish to delete
+
+```bash 
+conda remove -n envname -all
+```
+
+### Create via anaconda-navigator 
+
+An alternative way  to create a _env_ and install IDEs (spyder, jupyter, R, VS code, ... ) is via `anaconda_navigator`. [see](https://docs.anaconda.com/anaconda/navigator/tutorials/manage-environments "anaconda")
+
+
+
+
+
+
+
+
+
 
 
