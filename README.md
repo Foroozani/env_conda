@@ -21,7 +21,7 @@ conda 4.8.3
 ```bash 
 conda update conda
 ```
-
+---
 **2.  Create a virtual environment for your project**
 
 - In the terminal enter the following where _envname_ is the name you want to call your environment, and replace x.x with the `Pytho` version you wish to use. (To see a list of available python versions first,
@@ -34,7 +34,7 @@ conda create -n envname python=x.x
 ```
 
 - Press `y` to proceed. This will install the Python version and all the associated anaconda packaged libraries at “path_to_your_anaconda_location/anaconda/envs/envname”
-
+---
 **3. Activate your virtual environment**
 
 To activate or switch into your virtual environment, simply type the following where _envname_ is the name of your environment
@@ -42,8 +42,9 @@ To activate or switch into your virtual environment, simply type the following w
 ```bash 
 source activate envname
 ```
+- and you can install jypyter with `conda install -y jupyter`
 
-
+---
 **4. Install additional Python packages to a virtual environment**
 
 To install additional packages _only_ to your new virtual environment, enter the following comand  
