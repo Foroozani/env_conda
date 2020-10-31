@@ -55,6 +55,16 @@ conda install pytorch
 conda install panda 
 ```
 
+Just check if the module is even present in your system.
+```bash 
+conda list | grep bcolz
+```
+
+If both the commands return nul, you know you don't have this module installed. So, go ahead and install it by running
+```bash 
+conda install -c anaconda bcolz
+```
+
 **5. Deactivate your virtual environment8***
 
 To end a session in the current environment, enter the following. There is no need to specify the envname - which ever is currently active will be deactivated.
@@ -73,6 +83,8 @@ conda remove -n envname -all
 ### Create via anaconda-navigator 
 
 An alternative way  to create a _env_ and install IDEs (`spyder`, `jupyter`, `R`, `VS code`, ... ) is via `anaconda_navigator` directly. [see](https://docs.anaconda.com/anaconda/navigator/tutorials/manage-environments "anaconda")
+
+
 
 
 
